@@ -1,27 +1,28 @@
 /* start global style */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-:root{
-  --black:black;
-  --bg-container-color:#18181b;
-  --bg-header-color:rgb(39,39,42);
-  --white:white;
-  --border:rgba(63,63,70,0.4);
-  --title:rgb(244,244,245);
-  --sub-title:rgb(161,161,170);
-  --blue :rgb(93,188,252)
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --black: black;
+  --bg-container-color: #18181b;
+  --bg-header-color: rgb(39, 39, 42);
+  --white: white;
+  --border: rgba(63, 63, 70, 0.4);
+  --title: rgb(244, 244, 245);
+  --sub-title: rgb(161, 161, 170);
+  --blue: rgb(138, 200, 241);
+  --icon-hover: #d4d4d8;
 }
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: var(--black); 
-  color:var(--white);
+  background-color: var(--black);
+  color: var(--white);
   letter-spacing: 1px;
 }
-.container{
+.container {
   width: 80%;
   margin: auto;
   background-color: var(--bg-container-color);
@@ -32,15 +33,20 @@ body {
   display: flex;
   align-items: center;
 }
-
-.divider{
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+.divider {
   border-top: 1px solid var(--border);
   margin: 3rem 0;
 }
 li {
   list-style: none;
 }
-a{
+a {
   text-decoration: none;
   color: initial;
   transition: 0.7s;
@@ -53,5 +59,15 @@ button:hover {
 }
 button:active {
   scale: 0.9;
+}
+@media (max-width: 500px) {
+  .container {
+    width: 98%;
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    width: 95%;
+  }
 }
 /* end global style */

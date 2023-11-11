@@ -1,7 +1,4 @@
-import React from 'react'
-import "./Main.css"
+import "./Main.css";
 export default function Main() {
-  return (
-    <div>Main</div>
-  )
+  return <div className="Main">Main</div>;
 }
