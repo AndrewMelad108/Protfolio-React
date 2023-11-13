@@ -1,7 +1,7 @@
 import "./Hero.css";
 export default function Hero() {
   return (
-    <div className="flex Hero">
+    <div className=" Hero flex">
       <div className="Hero-info">
         <img
           src="../../../public/me-modified.png"
