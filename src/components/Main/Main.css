@@ -11,15 +11,16 @@
 =========================== */
 main.flex {
   align-items: start;
-  justify-content: center;
-  gap: 1rem;
+  width: 90%;
+  margin: auto;
+  gap: 3rem;
 }
 /* ========================
     2.Links Section
 =========================== */
 main.flex .links {
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 main.flex .links .link {
   background-color: rgba(36, 37, 46, 1);
@@ -27,27 +28,30 @@ main.flex .links .link {
   height: 40px;
   text-align: center;
   border-radius: 5px;
+  color: var(--sub-title);
   opacity: 1;
   text-transform: capitalize;
   transition: 0.4s;
-  border: 1px solid rgba(93, 188, 252, 0.3);
-}
-main.flex .links .link:hover {
+  border: 1px solid rgba(93, 188, 252, 0.1);
   opacity: 0.6;
+}
+main.flex .links .link.active {
   font-weight: bold;
   border: 1px solid var(--blue);
   letter-spacing: 0.6px;
-  border: 1px solid var(--blue);
+  font-size: 18px;
+  color: var(--title);
 }
 /* ========================
     3.Projects Section
 =========================== */
 main.flex .projects.flex {
-  gap: 0.5rem;
+  gap: 1rem;
   flex-wrap: wrap;
+  justify-content: start;
 }
 main.flex .projects .project-card {
-  width: 250px;
+  width: 230px;
   border-radius: 5px;
   height: auto;
   border: 1px solid rgba(93, 188, 252, 0.3);
@@ -64,7 +68,7 @@ main.flex .projects .project-card:hover {
   rotate: 3deg;
 }
 main.flex .projects .project-card img {
-  width: 250px;
+  width: 230px;
   height: 170px;
   padding: 2px;
 }
@@ -81,18 +85,20 @@ main.flex .projects .project-card .sub-title {
   padding: 4px 6px;
 }
 main.flex .projects .project-card .project-icons {
-  color: var(--title);
-  padding: 2px;
   margin: 0.3rem 0;
   justify-content: space-between;
   padding: 6px 8px;
+}
+main.flex .projects .project-card .project-icons a {
+  color: var(--title);
+  padding: 2px;
 }
 main.flex .projects .project-card .project-icons .left {
   gap: 0.5rem;
   font-size: 1.4rem;
   cursor: pointer;
 }
-main.flex .projects .project-card .project-icons .left > span:hover {
+main.flex .projects .project-card .project-icons .left > a span:hover {
   color: var(--sub-title);
 }
 main.flex .projects .project-card .project-icons .rigth {
@@ -119,6 +125,7 @@ main.flex .projects .project-card .project-icons .rigth {
     gap: 0.5rem;
   }
   main.flex .projects {
+    flex-direction: column;
     justify-content: center;
     margin-top: 20px;
   }

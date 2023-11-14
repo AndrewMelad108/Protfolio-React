@@ -11,16 +11,13 @@ export default function Contact() {
         Contact us more information and Get notified when i publish something
         new .
       </p>
-      <div className="flex">
+      <div className="flex contact-content">
         <div className="contact-form">
           <label htmlFor="Email">Email Address:</label>
-          <input type="email" placeholder="Enter Email" />
+          <input type="email" />
           <label htmlFor="Email">Your message:</label>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Message"
-          ></textarea>
+          <textarea name="message" id="message"></textarea>
+          <button className="contact-btn">submit</button>
         </div>
         <div className="contact-image">image</div>
       </div>
