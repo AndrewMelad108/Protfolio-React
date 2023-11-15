@@ -37,10 +37,17 @@ main.flex .links .link {
 }
 main.flex .links .link.active {
   font-weight: bold;
-  border: 1px solid var(--blue);
+  border: 1px solid #000;
   letter-spacing: 0.6px;
   font-size: 18px;
   color: var(--title);
+}
+
+.light main.flex .links .link.active {
+  color: white;
+  background-color: #000;
+  opacity: 1;
+  letter-spacing: 0.6px;
 }
 /* ========================
     3.Projects Section
@@ -66,6 +73,14 @@ main.flex .projects .project-card:hover {
   border: 1px solid var(--blue);
   cursor: pointer;
   rotate: 3deg;
+}
+.light main.flex .projects .project-card,
+.light main.flex .projects .project-card:hover {
+  border: none;
+  box-shadow: 1px 1px 4px gray;
+}
+.light main.flex .projects .project-card:hover {
+  background-color: rgba(245, 245, 245);
 }
 main.flex .projects .project-card img {
   width: 230px;

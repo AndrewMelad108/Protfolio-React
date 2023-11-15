@@ -1,4 +1,6 @@
 import "./Hero.css";
+import Lottie from "lottie-react";
+import Developer from "../../../public/animation/Developer.json";
 export default function Hero() {
   return (
     <div className=" Hero flex">
@@ -26,7 +28,7 @@ export default function Hero() {
           <span className="icon-facebook-square"></span>
         </div>
       </div>
-      <div className="Hero-image">img</div>
+      <Lottie className="Hero-image" animationData={Developer} />
     </div>
   );
 }

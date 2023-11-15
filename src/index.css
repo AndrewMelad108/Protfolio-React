@@ -22,6 +22,18 @@ html {
   scrollbar-color: #9e4673 #3d4a59;
   scroll-behavior: smooth;
 }
+
+.light {
+  --black: rgba(245, 245, 245);
+  --bg-container-color: rgba(255, 255, 255);
+  --bg-header-color: rgb(253, 253, 253);
+  --white: white;
+  --border: rgba(202, 202, 202, 0.518);
+  --title: rgb(39, 39, 42);
+  --sub-title: rgb(82, 82, 91);
+  --blue: rgb(0, 149, 246);
+  --icon-hover: #333;
+}
 body {
   background-color: var(--black);
   color: var(--white);

@@ -1,7 +1,30 @@
 import "./Header.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
+  const [theme, setTheme] = useState("dark");
+  const handleClick = () => {
+    theme === "dark" ? setTheme("light") : setTheme("dark");
+  };
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      console.log(window.scrollY);
+    });
+    if (theme === "dark") {
+      document.body.classList.add("dark");
+      document.body.classList.remove("light");
+    } else {
+      document.body.classList.remove("dark");
+      document.body.classList.add("light");
+    }
+  }, [theme]);
+
+  const scrollToRef = (offsetTop) => {
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth",
+    });
+  };
   return (
     <header className="flex">
       <button
@@ -16,19 +39,32 @@ export default function Header() {
       <nav>
         <ul className="flex">
           <li>
-            <a href="">About</a>
+            <button
+              onClick={() => {
+                scrollToRef(0);
+              }}
+            >
+              About
+            </button>
+          </li>
+
+          <li>
+            <button
+              onClick={() => {
+                scrollToRef(750);
+              }}
+            >
+              Projects
+            </button>
           </li>
           <li>
-            <a href="">Article</a>
-          </li>
-          <li>
-            <a href="">Projects</a>
-          </li>
-          <li>
-            <a href="">Speaking</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <button
+              onClick={() => {
+                scrollToRef(1913);
+              }}
+            >
+              Contact
+            </button>
           </li>
         </ul>
       </nav>
@@ -45,25 +81,50 @@ export default function Header() {
               </button>
             </li>
             <li>
-              <a href="">About</a>
+              <button
+                onClick={() => {
+                  scrollToRef(0);
+                  setShowMenu(false);
+                }}
+              >
+                About
+              </button>
+            </li>
+
+            <li>
+              <button
+                onClick={() => {
+                  scrollToRef(1000);
+                  setShowMenu(false);
+                }}
+              >
+                Projects
+              </button>
             </li>
             <li>
-              <a href="">Article</a>
-            </li>
-            <li>
-              <a href="">Projects</a>
-            </li>
-            <li>
-              <a href="">Speaking</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
+              <button
+                onClick={() => {
+                  scrollToRef(3550);
+                  setShowMenu(false);
+                }}
+              >
+                Contact
+              </button>
             </li>
           </ul>
         </div>
       )}
-      <button className="flex mode">
-        <span className="icon-moon-o"></span>
+      <button
+        onClick={() => {
+          handleClick();
+        }}
+        className="flex mode"
+      >
+        {theme === "dark" ? (
+          <span className="icon-moon-o"></span>
+        ) : (
+          <span className="icon-sun"></span>
+        )}
       </button>
     </header>
   );

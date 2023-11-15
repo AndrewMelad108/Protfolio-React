@@ -13,12 +13,11 @@
   width: 90%;
   margin: auto;
 }
+
 .contact .title-info {
   gap: 0.5rem;
-}
-.contact .title-info {
-  gap: 0.2rem;
-  margin: 0.5rem 0;
+  margin: 1.5rem 0;
+  color: var(--title);
 }
 .contact .title-info span.icon-envelope {
   font-size: 30px;
@@ -65,9 +64,58 @@
   border-radius: 5px;
   height: 100px;
 }
+.contact .contact-content .contact-form button {
+  all: unset;
+  display: block;
+  background-color: rgba(63, 63, 70, 0.15);
+  border: 1px solid rgb(63, 63, 70);
+  font-size: 15px;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  color: var(--sub-title);
+  padding: 5px;
+  border-radius: 5px;
+  height: 20px;
+  cursor: pointer;
+}
+.Message {
+  color: var(--title);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.light .contact .contact-content .contact-form button {
+  all: unset;
+  display: block;
+  background-color: #fff;
+  background-color: #d3d3d3;
+  min-width: 100%;
+  margin: auto;
+  padding: 5px;
+  height: 30px;
+  border-radius: 10px;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  color: var(--sub-title);
+  cursor: pointer;
+  text-align: center;
+}
+.light .contact .contact-content .contact-form textarea,
+.light .contact .contact-content .contact-form input {
+  background-color: hsla(0, 0%, 100%, 0.829);
+  border: 1px solid rgb(63, 63, 70);
+  color: black;
+}
 .contact .contact-content .contact-form textarea:focus,
-.contact .contact-content .contact-form input:focus {
+.contact .contact-content .contact-form input:focus,
+.contact .contact-content .contact-form textarea:hover,
+.contact .contact-content .contact-form input:hover {
   border: 1px solid rgb(45, 212, 191);
+}
+.light .contact .contact-content .contact-form input:focus,
+.light .contact .contact-content .contact-form textarea:hover,
+.light .contact .contact-content .contact-form textarea:focus,
+.light .contact .contact-content .contact-form input:hover {
+  border: 1px solid rgb(134, 134, 134);
 }
 .contact .contact-content .contact-form .contact-btn {
   color: var(--sub-title);
@@ -80,6 +128,9 @@
    3- Contact Section Image
 =========================== */
 .contact .contact-content .contact-image {
+  width: auto;
+  height: 250px;
+  margin: auto;
 }
 /* ========================
    4- Responsive Design (media query)
@@ -87,9 +138,10 @@
 @media (max-width: 700px) {
   .contact .contact-content {
     flex-direction: column;
+    justify-content: center;
   }
   .contact .contact-content .contact-form {
-    grid-template-columns: 1fr;
+    grid-template-columns: 30% auto;
     width: 100%;
   }
 }

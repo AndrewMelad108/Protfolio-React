@@ -1,6 +1,10 @@
-import React from "react";
 import "./Contact.css";
+import Lottie from "lottie-react";
+import ContactAnimation from "../../../public/animation/contact-us.json";
+import { useForm, ValidationError } from "@formspree/react";
 export default function Contact() {
+  const [state, handleSubmit] = useForm("xvojnrol");
+
   return (
     <div className="contact">
       <div className="title-info flex">
@@ -12,14 +16,29 @@ export default function Contact() {
         new .
       </p>
       <div className="flex contact-content">
-        <div className="contact-form">
+        <form onSubmit={handleSubmit} className="contact-form">
           <label htmlFor="Email">Email Address:</label>
-          <input type="email" />
+          <input name="email" id="email" type="email" />
+          <ValidationError field="email" prefix="email" errors={state.errors} />
           <label htmlFor="Email">Your message:</label>
           <textarea name="message" id="message"></textarea>
-          <button className="contact-btn">submit</button>
-        </div>
-        <div className="contact-image">image</div>
+          <ValidationError
+            field="message"
+            prefix="message"
+            errors={state.errors}
+          />
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className="contact-btn"
+          >
+            {state.submitting ? "Submitting......" : "Submit"}
+          </button>
+          <h6 className="Message">
+            {state.succeeded && <h1> Thank you for signing up!</h1>}
+          </h6>
+        </form>
+        <Lottie className="contact-image" animationData={ContactAnimation} />
       </div>
     </div>
   );
