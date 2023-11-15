@@ -9,14 +9,15 @@ export default function Hero() {
           alt="img-person"
         />
         <span className="icon-verified"></span>
-        <h1 className="Hero-info-title">
-          Software designer, founder, and amateur astronaut.
-        </h1>
+        <h1 className="Hero-info-title">Frontend Engineer (Vue.js/React.js)</h1>
         <p className="Hero-info-des">
-          I’m Spencer, a software designer and entrepreneur based in New York
-          City. I’m the founder and CEO of Planetaria, where we develop
-          technologies that empower regular people to explore space on their own
-          terms.
+          As Andrew Melad, I'm a passionate frontend developer specialized in
+          Vue.js and React.js. My focus is on crafting engaging user interfaces
+          and dynamic web solutions. Through diverse projects, I've honed skills
+          in modern tech, fostering an environment for implementing cutting-edge
+          tools. Continuously exploring new technologies, I'm presently
+          immersing myself in React.js and Next.js to enhance web experiences
+          further, merging these with my Vue.js expertise.
         </p>
         <div className="all-icons flex">
           <span className="icon-linkedin-square"></span>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "project_title": "Protfolio-React",
+    "project_image": "Protfolio-React.png",
+    "project_info": "Highlighting my frontend skills, the Portfolio showcases engaging projects and innovations in Vue.js and React.js.",
+    "project_link": "https://github.com/AndrewMelad108/Protfolio-React",
+    "github_link": "https://github.com/AndrewMelad108/Protfolio-React",
+    "category": ["React", "Js"]
+  },
+  {
+    "id": 2,
+    "project_title": "Jack",
+    "project_image": "Jack.png",
+    "project_info": "The Automotive Services Project handles car repair, parts purchase, used car sales, and includes a chat function for users and sellers.",
+    "project_link": "https://github.com/AndrewMelad108",
+    "github_link": "https://github.com/AndrewMelad108",
+    "category": ["Vue", "Js", "Vuei18n", "tailwindcss"]
+  },
+  {
+    "id": 3,
+    "project_title": "Amazon",
+    "project_image": "Protfolio-React.png",
+    "project_info": "Simplified Amazon-style project: Cart management, product purchase; CSS, React.js, HTML, JS (ES6), Firebase, Material UI",
+    "project_link": "https://github.com/AndrewMelad108/Amazon",
+    "github_link": "https://github.com/AndrewMelad108/Amazon",
+    "category": ["Firebase", "React", "Js"]
+  },
+  {
+    "id": 4,
+    "project_title": "AM Store",
+    "project_image": "AMStore.png",
+    "project_info": "Project with Guest and Admin Users: Guests can add to cart and purchase; Admin manages products, categories, users, and admin data.",
+    "project_link": "https://github.com/AndrewMelad108/E-comerce",
+    "github_link": "https://github.com/AndrewMelad108/E-comerce",
+    "category": ["Bootstrap", "Firebase", "Vue", "Vuei18n", "ES6", "Element UI"]
+  },
+  {
+    "id": 5,
+    "project_title": "Restaurant System",
+    "project_image": "RestaurantSystem.png",
+    "project_info": "A restaurant management project for adding, modifying, or removing restaurants, as well as adding or updating food types and menus.",
+    "project_link": "https://github.com/AndrewMelad108/RestaurantSystem",
+    "github_link": "https://github.com/AndrewMelad108/RestaurantSystem",
+    "category": ["Vue", "Js", "Firebase"]
+  },
+  {
+    "id": 6,
+    "project_title": "Portfolio-Vue",
+    "project_image": "Portfolio-Vue.png",
+    "project_info": "Highlighting my frontend skills, the Portfolio showcases engaging projects and innovations in Vue.js and React.js.",
+    "project_link": "https://github.com/AndrewMelad108/Portfolio-Vue",
+    "github_link": "https://github.com/AndrewMelad108/Portfolio-Vue",
+    "category": ["Vue", "Js", "tailwindcss"]
+  },
+  {
+    "id": 7,
+    "project_title": "tour-and-travel-website",
+    "project_image": "tour-and-travel-website.png",
+    "project_info": "Embark on unforgettable journeys and discover the world's wonders through our comprehensive Tour and Travel Website",
+    "project_link": "https://github.com/AndrewMelad108/tour-and-travel-website",
+    "github_link": "https://github.com/AndrewMelad108/tour-and-travel-website",
+    "category": ["HTML", "CSS"]
+  },
+  {
+    "id": 8,
+    "project_title": "chairs-company",
+    "project_image": "chairs-company.png",
+    "project_info": "At Chairs Company, we redefine seating comfort and elegance. Our mission is to provide ergonomic and stylish seating solutions ",
+    "project_link": "https://github.com/AndrewMelad108/chairs-company",
+    "github_link": "https://github.com/AndrewMelad108/chairs-company",
+    "category": ["HTML", "CSS"]
+  }
+]

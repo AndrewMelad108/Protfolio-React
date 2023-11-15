@@ -69,7 +69,7 @@ main.flex .projects .project-card:hover {
 }
 main.flex .projects .project-card img {
   width: 230px;
-  height: 170px;
+  height: 150px;
   padding: 2px;
 }
 main.flex .projects .project-card .title {
@@ -80,9 +80,10 @@ main.flex .projects .project-card .title {
 }
 main.flex .projects .project-card .sub-title {
   color: var(--sub-title);
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   margin: 0.3rem 0;
   padding: 4px 6px;
+  min-height: 3rem;
 }
 main.flex .projects .project-card .project-icons {
   margin: 0.3rem 0;

@@ -1,53 +1,7 @@
 import "./Main.css";
 import { useState } from "react";
+import Projects from "../../Projects.json";
 export default function Main() {
-  let Projects = [
-    {
-      id: 1,
-      project_title: "landing page",
-      project_info:
-        "possimus illum unde. Consectetur officia saepe animi maiores ipsum,",
-      project_link: "https://github.com/AndrewMelad108",
-      github_link: "https://github.com/AndrewMelad108",
-      category: ["gridsome", "CSS", "HTML"],
-    },
-    {
-      id: 2,
-      project_title: "AM Store",
-      project_info:
-        "possimus illum unde. Consectetur officia saepe animi maiores ipsum,",
-      project_link: "https://github.com/AndrewMelad108",
-      github_link: "https://github.com/AndrewMelad108",
-      category: ["Vue", "Firebase", "Js", "HTML", "CSS"],
-    },
-    {
-      id: 3,
-      project_title: "RestaurantSystem",
-      project_info:
-        "possimus illum unde. Consectetur officia saepe animi maiores ipsum,",
-      project_link: "https://github.com/AndrewMelad108",
-      github_link: "https://github.com/AndrewMelad108",
-      category: ["Bootstrap", "Firebase", "HTML", "CSS", "Vue"],
-    },
-    {
-      id: 4,
-      project_title: "chairs-company",
-      project_info:
-        "possimus illum unde. Consectetur officia saepe animi maiores ipsum,",
-      project_link: "https://github.com/AndrewMelad108",
-      github_link: "https://github.com/AndrewMelad108",
-      category: ["Bootstrap", "Firebase", "HTML", "CSS", "Vue"],
-    },
-    {
-      id: 5,
-      project_title: "simple-front-end-project",
-      project_info:
-        "possimus illum unde. Consectetur officia saepe animi maiores ipsum,",
-      project_link: "https://github.com/AndrewMelad108",
-      github_link: "https://github.com/AndrewMelad108",
-      category: ["HTML", "CSS"],
-    },
-  ];
   const [active, setActive] = useState("all");
   const [projects, setProjects] = useState(Projects);
   const handleClick = (category) => {
@@ -59,6 +13,7 @@ export default function Main() {
         const foundCategory = project.category.find((cat) => cat === category);
         return foundCategory === category;
       });
+      console.log(newProjects);
       setProjects(newProjects);
     }
   };
@@ -83,6 +38,14 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
+            handleClick("tailwindcss");
+          }}
+          className={active === "tailwindcss" ? "link active" : "link"}
+        >
+          tailwind css
+        </button>
+        <button
+          onClick={() => {
             handleClick("Js");
           }}
           className={active === "Js" ? "link active" : "link"}
@@ -99,7 +62,7 @@ export default function Main() {
         </button>
         <button
           onClick={() => {
-            setActive("React");
+            handleClick("React");
           }}
           className={active === "React" ? "link active" : "link"}
         >
@@ -111,7 +74,7 @@ export default function Main() {
           return (
             <div className="project-card" key={project.id}>
               <img
-                src="../../../public/images/4-9.png"
+                src={`../../../public/images/${project.project_image}`}
                 alt="project-card"
                 className="project-image "
               />
