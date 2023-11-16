@@ -50,10 +50,14 @@
   gap: 1.2rem;
   margin: 10px 0;
 }
-.Hero .Hero-info .all-icons > span {
+.Hero .Hero-info .all-icons a {
+  all: unset;
+}
+.Hero .Hero-info .all-icons span {
   cursor: pointer;
   transition: all ease-in-out 0.4s;
   font-size: 20px;
+  color: var(--title);
 }
 .Hero .Hero-info .all-icons > span:hover {
   color: var(--icon-hover);

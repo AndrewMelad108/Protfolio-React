@@ -1,6 +1,6 @@
 import "./Contact.css";
 import Lottie from "lottie-react";
-import ContactAnimation from "../../../public/animation/contact-us.json";
+import ContactAnimation from "../../animation/contact-us.json";
 import { useForm, ValidationError } from "@formspree/react";
 export default function Contact() {
   const [state, handleSubmit] = useForm("xvojnrol");
@@ -35,7 +35,11 @@ export default function Contact() {
             {state.submitting ? "Submitting......" : "Submit"}
           </button>
           <h6 className="Message">
-            {state.succeeded && <h1> Thank you for signing up!</h1>}
+            {state.succeeded ? (
+              <h2> Thank you, the email was sent successfully &#128540;</h2>
+            ) : (
+              <h2> Please fill out all data fields &#129300;</h2>
+            )}
           </h6>
         </form>
         <Lottie className="contact-image" animationData={ContactAnimation} />

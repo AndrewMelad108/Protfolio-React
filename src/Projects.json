@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "project_title": "Protfolio-React",
-    "project_image": "Protfolio-React.png",
+    "project_title": "Portfolio-React",
+    "project_image": "https://firebasestorage.googleapis.com/v0/b/portfolio-b8df4.appspot.com/o/Protfolio-React.png?alt=media&token=22834a4b-11cc-488b-a4eb-ffa3ab4fa0bd",
     "project_info": "Highlighting my frontend skills, the Portfolio showcases engaging projects and innovations in Vue.js and React.js.",
     "project_link": "https://github.com/AndrewMelad108/Protfolio-React",
     "github_link": "https://github.com/AndrewMelad108/Protfolio-React",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "project_title": "Jack",
-    "project_image": "Jack.png",
+    "project_image": "https://firebasestorage.googleapis.com/v0/b/portfolio-b8df4.appspot.com/o/Jack.png?alt=media&token=68bb7f2e-1670-410c-b71f-c880c2107cdc",
     "project_info": "The Automotive Services Project handles car repair, parts purchase, used car sales, and includes a chat function for users and sellers.",
     "project_link": "https://github.com/AndrewMelad108",
     "github_link": "https://github.com/AndrewMelad108",
@@ -20,16 +20,16 @@
   {
     "id": 3,
     "project_title": "Amazon",
-    "project_image": "Protfolio-React.png",
+    "project_image": "https://firebasestorage.googleapis.com/v0/b/portfolio-b8df4.appspot.com/o/Amazon.png?alt=media&token=ebff8922-f908-4143-85ba-6719ecb3d434",
     "project_info": "Simplified Amazon-style project: Cart management, product purchase; CSS, React.js, HTML, JS (ES6), Firebase, Material UI",
-    "project_link": "https://github.com/AndrewMelad108/Amazon",
+    "project_link": "https://clone-6412a.firebaseapp.com",
     "github_link": "https://github.com/AndrewMelad108/Amazon",
     "category": ["Firebase", "React", "Js"]
   },
   {
     "id": 4,
     "project_title": "AM Store",
-    "project_image": "AMStore.png",
+    "project_image": "https://firebasestorage.googleapis.com/v0/b/portfolio-b8df4.appspot.com/o/AMStore.png?alt=media&token=8dba4dbf-1ba8-4dca-98b2-a215c8e8bdf1",
     "project_info": "Project with Guest and Admin Users: Guests can add to cart and purchase; Admin manages products, categories, users, and admin data.",
     "project_link": "https://github.com/AndrewMelad108/E-comerce",
     "github_link": "https://github.com/AndrewMelad108/E-comerce",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "project_title": "Restaurant System",
-    "project_image": "RestaurantSystem.png",
+    "project_image": "https://firebasestorage.googleapis.com/v0/b/portfolio-b8df4.appspot.com/o/RestaurantSystem.png?alt=media&token=b85f86c3-c949-4993-b089-4af5a350eefb",
     "project_info": "A restaurant management project for adding, modifying, or removing restaurants, as well as adding or updating food types and menus.",
     "project_link": "https://github.com/AndrewMelad108/RestaurantSystem",
     "github_link": "https://github.com/AndrewMelad108/RestaurantSystem",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "project_title": "Portfolio-Vue",
-    "project_image": "Portfolio-Vue.png",
+    "project_image": "https://firebasestorage.googleapis.com/v0/b/portfolio-b8df4.appspot.com/o/Portfolio-Vue.png?alt=media&token=7a71421f-88f6-42ed-95a2-c31aa44de3ca",
     "project_info": "Highlighting my frontend skills, the Portfolio showcases engaging projects and innovations in Vue.js and React.js.",
     "project_link": "https://github.com/AndrewMelad108/Portfolio-Vue",
     "github_link": "https://github.com/AndrewMelad108/Portfolio-Vue",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "project_title": "tour-and-travel-website",
-    "project_image": "tour-and-travel-website.png",
+    "project_image": "https://firebasestorage.googleapis.com/v0/b/portfolio-b8df4.appspot.com/o/tour-and-travel-website.png?alt=media&token=87867cc3-0fe5-4e22-85ba-51d9ae42bfb5",
     "project_info": "Embark on unforgettable journeys and discover the world's wonders through our comprehensive Tour and Travel Website",
     "project_link": "https://github.com/AndrewMelad108/tour-and-travel-website",
     "github_link": "https://github.com/AndrewMelad108/tour-and-travel-website",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "project_title": "chairs-company",
-    "project_image": "chairs-company.png",
+    "project_image": "https://firebasestorage.googleapis.com/v0/b/portfolio-b8df4.appspot.com/o/chairs-company.png?alt=media&token=d4adad62-4dbf-4e02-9213-ac972783b6ce",
     "project_info": "At Chairs Company, we redefine seating comfort and elegance. Our mission is to provide ergonomic and stylish seating solutions ",
     "project_link": "https://github.com/AndrewMelad108/chairs-company",
     "github_link": "https://github.com/AndrewMelad108/chairs-company",

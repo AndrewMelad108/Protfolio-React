@@ -7,9 +7,6 @@ export default function Header() {
     theme === "dark" ? setTheme("light") : setTheme("dark");
   };
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      console.log(window.scrollY);
-    });
     if (theme === "dark") {
       document.body.classList.add("dark");
       document.body.classList.remove("light");
@@ -51,7 +48,7 @@ export default function Header() {
           <li>
             <button
               onClick={() => {
-                scrollToRef(750);
+                scrollToRef(700);
               }}
             >
               Projects

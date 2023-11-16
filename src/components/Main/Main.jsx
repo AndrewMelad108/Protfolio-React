@@ -83,7 +83,7 @@ export default function Main() {
                 key={project.id}
               >
                 <motion.img
-                  src={`../../../public/images/${project.project_image}`}
+                  src={project.project_image}
                   alt="project-card"
                   className="project-image "
                 />

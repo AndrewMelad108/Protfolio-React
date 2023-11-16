@@ -102,7 +102,7 @@
 .light .contact .contact-content .contact-form textarea,
 .light .contact .contact-content .contact-form input {
   background-color: hsla(0, 0%, 100%, 0.829);
-  border: 1px solid rgb(63, 63, 70);
+  border: 1px solid rgb(171, 171, 171);
   color: black;
 }
 .contact .contact-content .contact-form textarea:focus,
