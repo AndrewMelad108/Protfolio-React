@@ -9,7 +9,7 @@ export default function Contact() {
     <div className="contact">
       <div className="title-info flex">
         <span className="icon-envelope"></span>
-        <h1 className="title">Contact Us</h1>
+        <h1 className="title">Contact Me</h1>
       </div>
       <p className="sub-title">
         Contact us more information and Get notified when i publish something

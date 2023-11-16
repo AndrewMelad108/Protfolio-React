@@ -52,14 +52,12 @@
 }
 .Hero .Hero-info .all-icons a {
   all: unset;
-}
-.Hero .Hero-info .all-icons span {
   cursor: pointer;
   transition: all ease-in-out 0.4s;
   font-size: 20px;
   color: var(--title);
 }
-.Hero .Hero-info .all-icons > span:hover {
+.Hero .Hero-info .all-icons a:hover {
   color: var(--icon-hover);
 }
 /* ========================
